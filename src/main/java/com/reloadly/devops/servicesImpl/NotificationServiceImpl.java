@@ -29,6 +29,7 @@ public class NotificationServiceImpl implements NotificationService {
 			.orElseThrow(() -> new AppException("Error validating username: " + notificationRequest.getUsername()));
 		
 		if(!(Boolean) validUser.get("valid")) {
+			log.info("--->> User validation was unsuccessful");
 			throw new UsernameMismatchException();
 		}
 		
@@ -44,7 +45,7 @@ public class NotificationServiceImpl implements NotificationService {
 			break;
 
 		case SIGNUP:
-			log.info("--->> Sending notification email for successful user registration");
+			log.info("--->> Sending notification email for successful user registration and account creation");
 
 			AccountCreationNotificationDTO accountCreationNotificationDTO = (AccountCreationNotificationDTO) notificationRequest;
 			templateConfigurer.signupNotification(accountCreationNotificationDTO);

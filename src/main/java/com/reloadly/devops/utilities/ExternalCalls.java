@@ -64,7 +64,7 @@ public class ExternalCalls {
 		Map<String, Object> responseDTO = null;
 
 		HttpHeaders requestHeader = new HttpHeaders();
-		final String URL = props.getAccountCreationService() + username;
+		final String URL = props.getAccountManagementUrl() + "getfirstname/" + username;
 
 		requestHeader.setContentType(MediaType.APPLICATION_JSON);
 		requestHeader.add("Authorization",
@@ -79,8 +79,8 @@ public class ExternalCalls {
 			return Optional.of(responseDTO);
 
 		} else {
-			log.info("---->>> No Response from escrow server");
-			throw new AppException("---->>> No Response from escrow server");
+			log.info("---->>> No Response from account management server");
+			throw new AppException("---->>> No Response from account management server");
 		}
 	}
 }

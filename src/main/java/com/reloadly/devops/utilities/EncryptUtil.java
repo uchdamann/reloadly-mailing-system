@@ -83,7 +83,7 @@ public class EncryptUtil {
 			byte[] dataEncrypt = encryptString(data);
 			dataString = new String(Base64.encode(dataEncrypt));
 			
-			log.info("---->>> Data encryption success: {}", dataString);
+			log.info("---->>> Data encryption success");
 		} catch (CryptoException e) {
 			log.info("---->>> Data encryption failure");
 		}

@@ -1,85 +1,29 @@
-Mon 24-Jan-2022 01:20:59 INFO  - [           main] SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.reloadly.devops.ReloadlyMailNotifierAppApplicationTests], using SpringBootContextLoader
-Mon 24-Jan-2022 01:20:59 INFO  - [           main] AbstractContextLoader     : Could not detect default resource locations for test class [com.reloadly.devops.ReloadlyMailNotifierAppApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-Mon 24-Jan-2022 01:20:59 INFO  - [           main] AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.reloadly.devops.ReloadlyMailNotifierAppApplicationTests]: ReloadlyMailNotifierAppApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-Mon 24-Jan-2022 01:21:00 INFO  - [           main] SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.reloadly.devops.ReloadlyMailNotifierAppApplication for test class com.reloadly.devops.ReloadlyMailNotifierAppApplicationTests
-Mon 24-Jan-2022 01:21:05 INFO  - [           main] SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-Mon 24-Jan-2022 01:21:05 INFO  - [           main] SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@71cf1b07, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@615091b8, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4fce136b, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@4aa83f4f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@43b6123e, org.springframework.test.context.event.EventPublishingTestExecutionListener@260e86a1, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@19648c40, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@12bd8a64, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@61e94def, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3300f4fd, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@ebb6851, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@70ab2d48]
-Mon 24-Jan-2022 01:21:08 INFO  - [           main] ReloadlyMailNotifierAppApplicationTests : Starting ReloadlyMailNotifierAppApplicationTests using Java 1.8.0_221 on DESKTOP-2N2OQGT with PID 8552 (started by Uche Kamani in C:\Users\Uche Kamani\Documents\STS4Projects\reloadly-mail-notifier-app)
-Mon 24-Jan-2022 01:21:08 INFO  - [           main] ReloadlyMailNotifierAppApplicationTests : The following profiles are active: dev
-Mon 24-Jan-2022 01:21:08 INFO  - [init] Version                   : HV000001: Hibernate Validator 6.1.6.Final
-Mon 24-Jan-2022 01:21:17 INFO  - [           main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'appProperties' of type [com.reloadly.devops.utilities.AppProperties$$EnhancerBySpringCGLIB$$f7848da1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-Mon 24-Jan-2022 01:21:17 INFO  - [           main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'asyncConfig' of type [com.reloadly.devops.configs.AsyncConfig$$EnhancerBySpringCGLIB$$dff72952] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-Mon 24-Jan-2022 01:21:22 INFO  - [           main] UserDetailsServiceAutoConfiguration : 
+Tue 25-Jan-2022 14:45:46 INFO  - [init] Version                   : HV000001: Hibernate Validator 6.1.6.Final
+Tue 25-Jan-2022 14:45:46 INFO  - [Main] ReloadlyMailNotifierAppApplication : Starting ReloadlyMailNotifierAppApplication using Java 1.8.0_131 on DESKTOP-2N2OQGT with PID 1404 (C:\Users\Uche Kamani\Documents\STS4Projects\reloadly-mail-notifier-app\target\classes started by Uche Kamani in C:\Users\Uche Kamani\Documents\STS4Projects\reloadly-mail-notifier-app)
+Tue 25-Jan-2022 14:45:46 INFO  - [Main] ReloadlyMailNotifierAppApplication : The following profiles are active: dev
+Tue 25-Jan-2022 14:45:46 INFO  - [Main] DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+Tue 25-Jan-2022 14:45:46 INFO  - [Main] DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+Tue 25-Jan-2022 14:45:51 INFO  - [Main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'appProperties' of type [com.reloadly.devops.utilities.AppProperties$$EnhancerBySpringCGLIB$$5f130ebb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tue 25-Jan-2022 14:45:51 INFO  - [Main] PostProcessorRegistrationDelegate$BeanPostProcessorChecker : Bean 'asyncConfig' of type [com.reloadly.devops.configs.AsyncConfig$$EnhancerBySpringCGLIB$$4785aa6c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+Tue 25-Jan-2022 14:45:56 INFO  - [Main] TomcatWebServer           : Tomcat initialized with port(s): 6543 (http)
+Tue 25-Jan-2022 14:45:56 INFO  - [Main] Http11NioProtocol         : Initializing ProtocolHandler ["http-nio-6543"]
+Tue 25-Jan-2022 14:45:56 INFO  - [Main] StandardService           : Starting service [Tomcat]
+Tue 25-Jan-2022 14:45:56 INFO  - [Main] StandardEngine            : Starting Servlet engine: [Apache Tomcat/9.0.41]
+Tue 25-Jan-2022 14:45:56 INFO  - [Main] [/]                       : Initializing Spring embedded WebApplicationContext
+Tue 25-Jan-2022 14:45:56 INFO  - [Main] ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9968 ms
+Tue 25-Jan-2022 14:45:57 INFO  - [Main] RestTemplateConfig        : ---->>> Setting up certificate link and  communication
+Tue 25-Jan-2022 14:46:01 INFO  - [Main] UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: 13084bd9-6a28-45cd-a8cf-64a90272cfde
+Using generated security password: be022b72-86a8-42a7-8591-da651af5db90
 
-Mon 24-Jan-2022 01:21:24 INFO  - [           main] DefaultSecurityFilterChain : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@35eee641, org.springframework.security.web.context.SecurityContextPersistenceFilter@647b9364, org.springframework.security.web.header.HeaderWriterFilter@741741d0, org.springframework.security.web.authentication.logout.LogoutFilter@3e1f1046, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@261de205, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@49edcb30, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@45a1d057, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5729b410, org.springframework.security.web.session.SessionManagementFilter@e5c2463, org.springframework.security.web.access.ExceptionTranslationFilter@3380ca3d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@28e8888d]
-Mon 24-Jan-2022 01:21:24 INFO  - [           main] RestTemplateConfig        : ---->>> Setting up certificate link and  communication
-Mon 24-Jan-2022 01:21:30 INFO  - [           main] ThreadPoolTaskExecutor    : Initializing ExecutorService 'applicationTaskExecutor'
-Mon 24-Jan-2022 01:21:36 INFO  - [           main] SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-Mon 24-Jan-2022 01:21:36 INFO  - [           main] TestDispatcherServlet     : Initializing Servlet ''
-Mon 24-Jan-2022 01:21:36 INFO  - [           main] TestDispatcherServlet     : Completed initialization in 8 ms
-Mon 24-Jan-2022 01:21:36 INFO  - [           main] ReloadlyMailNotifierAppApplicationTests : Started ReloadlyMailNotifierAppApplicationTests in 30.393 seconds (JVM running for 57.231)
-Mon 24-Jan-2022 01:21:38 INFO  - [           main] AppFilter                 : ---->>> HTTP METHOD: POST
-Mon 24-Jan-2022 01:21:38 INFO  - [           main] AppFilter                 : ---->>> REQUEST URI: /api/mail/v1/send-create
-Mon 24-Jan-2022 01:21:38 INFO  - [           main] AppFilter                 : ---->>> SOURCE IP: 127.0.0.1
-Mon 24-Jan-2022 01:21:38 INFO  - [           main] MailController            : --->> Initializing mail notification
-Mon 24-Jan-2022 01:21:38 INFO  - [           main] UtilitiesAndTweaks        : ---->>> Initializing request source check
-Mon 24-Jan-2022 01:21:38 INFO  - [           main] UtilitiesAndTweaks        : ---->>> Authenticated user is: No user
-Mon 24-Jan-2022 01:21:38 INFO  - [           main] UtilitiesAndTweaks        : ---->>> Request source: WEB BROWSER
-Mon 24-Jan-2022 01:21:38 INFO  - [           main] NotificationServiceImpl   : --->> User validated successfully
-Mon 24-Jan-2022 01:21:39 INFO  - [           main] NotificationServiceImpl   : --->> Sending notification email for successful user registration
-Mon 24-Jan-2022 01:21:39 INFO  - [           main] ThreadPoolTaskExecutor    : Initializing ExecutorService
-Mon 24-Jan-2022 01:21:39 INFO  - [           main] AppFilter                 : ---->>> HTTP METHOD: POST
-Mon 24-Jan-2022 01:21:39 INFO  - [           main] AppFilter                 : ---->>> REQUEST URI: /api/mail/v1/send-login
-Mon 24-Jan-2022 01:21:39 INFO  - [           main] AppFilter                 : ---->>> SOURCE IP: 127.0.0.1
-Mon 24-Jan-2022 01:21:39 INFO  - [           main] MailController            : --->> Initializing mail notification
-Mon 24-Jan-2022 01:21:39 INFO  - [           main] UtilitiesAndTweaks        : ---->>> Initializing request source check
-Mon 24-Jan-2022 01:21:39 INFO  - [           main] UtilitiesAndTweaks        : ---->>> Authenticated user is: No user
-Mon 24-Jan-2022 01:21:39 INFO  - [           main] UtilitiesAndTweaks        : ---->>> Request source: WEB BROWSER
-Mon 24-Jan-2022 01:21:39 INFO  - [           main] NotificationServiceImpl   : --->> User validated successfully
-Mon 24-Jan-2022 01:21:39 INFO  - [           main] NotificationServiceImpl   : --->> Sending notification email for login
-Mon 24-Jan-2022 01:21:39 INFO  - [CE_2] EmailTemplateConfig       : --->> Login notifier configurer
-Mon 24-Jan-2022 01:21:39 INFO  - [           main] AppFilter                 : ---->>> HTTP METHOD: POST
-Mon 24-Jan-2022 01:21:39 INFO  - [           main] AppFilter                 : ---->>> REQUEST URI: /api/mail/v1/send-transact
-Mon 24-Jan-2022 01:21:39 INFO  - [           main] AppFilter                 : ---->>> SOURCE IP: 127.0.0.1
-Mon 24-Jan-2022 01:21:39 INFO  - [           main] MailController            : --->> Initializing mail notification
-Mon 24-Jan-2022 01:21:39 INFO  - [           main] UtilitiesAndTweaks        : ---->>> Initializing request source check
-Mon 24-Jan-2022 01:21:39 INFO  - [           main] UtilitiesAndTweaks        : ---->>> Authenticated user is: No user
-Mon 24-Jan-2022 01:21:39 INFO  - [           main] UtilitiesAndTweaks        : ---->>> Request source: WEB BROWSER
-Mon 24-Jan-2022 01:21:39 INFO  - [           main] NotificationServiceImpl   : --->> User validated successfully
-Mon 24-Jan-2022 01:21:39 INFO  - [           main] NotificationServiceImpl   : --->> Sending notification email for transaction
-Mon 24-Jan-2022 01:21:41 INFO  - [CE_2] EmailTemplateConfig       : ---->>> Mail context, template and subject setup completed
-Mon 24-Jan-2022 01:21:41 INFO  - [CE_2] EmailServiceConfigImpl    : ---->>> Preparing mail content
-Mon 24-Jan-2022 01:21:41 INFO  - [CE_1] EmailTemplateConfig       : ---->>> Mail context, template and subject setup completed
-Mon 24-Jan-2022 01:21:41 INFO  - [CE_1] EmailServiceConfigImpl    : ---->>> Preparing mail content
-Mon 24-Jan-2022 01:21:41 INFO  - [           main] EmailTemplateConfig       : ---->>> Mail context, template and subject setup completed
-Mon 24-Jan-2022 01:21:41 INFO  - [           main] EmailServiceConfigImpl    : ---->>> Preparing mail content
-Mon 24-Jan-2022 01:21:46 INFO  - [CE_2] EmailServiceConfigImpl    : ---->>> Email successfully sent to chineduezeigbo2015@gmail.com
-Mon 24-Jan-2022 01:21:46 INFO  - [CE_1] EmailServiceConfigImpl    : ---->>> Email successfully sent to chineduezeigbo2015@gmail.com
-Mon 24-Jan-2022 01:21:46 INFO  - [           main] EmailServiceConfigImpl    : ---->>> Email successfully sent to chineduezeigbo2015@gmail.com
-Mon 24-Jan-2022 01:21:46 INFO  - [           main] AppFilter                 : ---->>> HTTP METHOD: POST
-Mon 24-Jan-2022 01:21:46 INFO  - [           main] AppFilter                 : ---->>> REQUEST URI: /api/mail/v1/send-transact
-Mon 24-Jan-2022 01:21:46 INFO  - [           main] AppFilter                 : ---->>> SOURCE IP: 127.0.0.1
-Mon 24-Jan-2022 01:21:46 INFO  - [           main] MailController            : --->> Initializing mail notification
-Mon 24-Jan-2022 01:21:46 INFO  - [           main] UtilitiesAndTweaks        : ---->>> Initializing request source check
-Mon 24-Jan-2022 01:21:46 INFO  - [           main] UtilitiesAndTweaks        : ---->>> Authenticated user is: No user
-Mon 24-Jan-2022 01:21:46 INFO  - [           main] UtilitiesAndTweaks        : ---->>> Request source: WEB BROWSER
-Mon 24-Jan-2022 01:21:46 INFO  - [           main] NotificationServiceImpl   : --->> User validated successfully
-Mon 24-Jan-2022 01:21:46 INFO  - [           main] NotificationServiceImpl   : --->> Sending notification email for transaction
-Mon 24-Jan-2022 01:21:46 INFO  - [           main] EmailTemplateConfig       : ---->>> Mail context, template and subject setup completed
-Mon 24-Jan-2022 01:21:46 INFO  - [           main] EmailServiceConfigImpl    : ---->>> Preparing mail content
-Mon 24-Jan-2022 01:21:49 INFO  - [           main] EmailServiceConfigImpl    : ---->>> Email successfully sent to chineduezeigbo2015@gmail.com
-Mon 24-Jan-2022 01:21:49 INFO  - [           main] AppFilter                 : ---->>> HTTP METHOD: POST
-Mon 24-Jan-2022 01:21:49 INFO  - [           main] AppFilter                 : ---->>> REQUEST URI: /api/mail/v1/send-transact
-Mon 24-Jan-2022 01:21:49 INFO  - [           main] AppFilter                 : ---->>> SOURCE IP: 127.0.0.1
-Mon 24-Jan-2022 01:21:49 INFO  - [           main] MailController            : --->> Initializing mail notification
-Mon 24-Jan-2022 01:21:49 INFO  - [           main] UtilitiesAndTweaks        : ---->>> Initializing request source check
-Mon 24-Jan-2022 01:21:49 INFO  - [           main] UtilitiesAndTweaks        : ---->>> Authenticated user is: No user
-Mon 24-Jan-2022 01:21:49 INFO  - [           main] UtilitiesAndTweaks        : ---->>> Request source: WEB BROWSER
-Mon 24-Jan-2022 01:21:49 INFO  - [           main] NotificationServiceImpl   : --->> User validated successfully
-Mon 24-Jan-2022 01:21:49 INFO  - [           main] NotificationServiceImpl   : --->> Sending notification email for transaction
-Mon 24-Jan-2022 01:21:49 INFO  - [           main] EmailTemplateConfig       : ---->>> Mail context, template and subject setup completed
-Mon 24-Jan-2022 01:21:49 INFO  - [           main] EmailServiceConfigImpl    : ---->>> Preparing mail content
-Mon 24-Jan-2022 01:21:52 INFO  - [           main] EmailServiceConfigImpl    : ---->>> Email successfully sent to chineduezeigbo2015@gmail.com
-Mon 24-Jan-2022 01:21:52 INFO  - [Hook] ThreadPoolTaskExecutor    : Shutting down ExecutorService 'applicationTaskExecutor'
+Tue 25-Jan-2022 14:46:02 INFO  - [Main] DefaultSecurityFilterChain : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2152c0af, org.springframework.security.web.context.SecurityContextPersistenceFilter@25e70804, org.springframework.security.web.header.HeaderWriterFilter@7d8edf28, org.springframework.security.web.authentication.logout.LogoutFilter@4c706ac4, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@7dc09967, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@617c1890, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@734ea237, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@561fda9a, org.springframework.security.web.session.SessionManagementFilter@4b131ded, org.springframework.security.web.access.ExceptionTranslationFilter@6d6ba21, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@31b57b2a]
+Tue 25-Jan-2022 14:46:03 INFO  - [Main] ThreadPoolTaskExecutor    : Initializing ExecutorService 'applicationTaskExecutor'
+Tue 25-Jan-2022 14:46:06 WARN  - [Main] OptionalLiveReloadServer  : Unable to start LiveReload server
+Tue 25-Jan-2022 14:46:06 INFO  - [Main] Http11NioProtocol         : Starting ProtocolHandler ["http-nio-6543"]
+Tue 25-Jan-2022 14:46:06 INFO  - [Main] TomcatWebServer           : Tomcat started on port(s): 6543 (http) with context path ''
+Tue 25-Jan-2022 14:46:06 INFO  - [Main] ReloadlyMailNotifierAppApplication : Started ReloadlyMailNotifierAppApplication in 21.335 seconds (JVM running for 25.289)
+Tue 25-Jan-2022 14:51:03 INFO  - [.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+Tue 25-Jan-2022 14:51:03 INFO  - [.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+Tue 25-Jan-2022 14:51:04 INFO  - [.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+Tue 25-Jan-2022 14:51:04 INFO  - [.0.1] SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+Tue 25-Jan-2022 14:51:04 INFO  - [.0.1] ThreadPoolTaskExecutor    : Shutting down ExecutorService 'applicationTaskExecutor'

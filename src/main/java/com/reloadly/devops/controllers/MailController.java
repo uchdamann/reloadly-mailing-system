@@ -32,7 +32,7 @@ public class MailController {
 	private final NotificationService notificationService;
 	private final UtilitiesAndTweaks utils;
 	
-	@PostMapping("send-login")
+	@PostMapping("/send-login")
 	public void loginNotification(@RequestBody @Valid LoginNotificationDTO notificationDTO,
 												   HttpServletRequest req) {
 		log.info("--->> Initializing mail notification");
@@ -40,7 +40,7 @@ public class MailController {
 		notificationService.notifyUser(notificationDTO);
 	}
 
-	@PostMapping("send-create")
+	@PostMapping("/send-create")
 	public void creationNotification(@RequestBody @Valid AccountCreationNotificationDTO notificationDTO,
 								  HttpServletRequest req) {
 		log.info("--->> Initializing mail notification");
@@ -48,7 +48,7 @@ public class MailController {
 		notificationService.notifyUser(notificationDTO);
 	}
 
-	@PostMapping("send-transact")
+	@PostMapping("/send-transact")
 	public void transactionNotification(@RequestBody @Valid TransactionNotificationDTO notificationDTO,
 								  HttpServletRequest req) {
 		log.info("--->> Initializing mail notification");
