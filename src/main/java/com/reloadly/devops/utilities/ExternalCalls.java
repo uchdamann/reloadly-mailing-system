@@ -71,7 +71,9 @@ public class ExternalCalls {
 				"Bearer " + generateAuthServeTokenClientCredentialsGrantType().getAccessToken());
 		requestHeader.add("ChannelCode", props.getWebChannelCode());
 
-		ResponseEntity<String> response = restTemplate.getForEntity(URL, String.class);
+		HttpEntity<String> requestEntity = new HttpEntity<>(null, requestHeader);
+
+		ResponseEntity<String> response = restTemplate.postForEntity(URL, requestEntity, String.class);
 
 		if (response != null) {
 			responseDTO = JsonBuilder.toClassTypeReference(response.getBody(), new TypeReference<Map<String, Object>>() {});
